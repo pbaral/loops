@@ -16,7 +16,7 @@ EXAMPLE TASK:
 i = 5
 WHILE i != 3:
     print(i)
-    i = i + 1
+    i = i - 1
 '''
 END EXAMPLE
 '''
@@ -31,7 +31,10 @@ START HERE
 #WHILE i != 2:
 #    print(i)
 #    i -= 1
-
+i = 6
+while i != 2:
+    print(i)
+    i -= 1
 #2)
 #Broken:
 #i = 7
@@ -41,7 +44,12 @@ START HERE
 #    print(i)
 #    i += 1
     
-
+i = 7 
+while i < 10:
+    print(i)
+    i += 1
+    if i == 9:
+        break
 
 #3)
 #Broken:
@@ -52,6 +60,13 @@ START HERE
 #    print(i)
 #    i += 1
 
+i = 7
+while i < 10:
+    print(i)
+    i += 1
+    if i == 9:
+        break
+    
 #4)
 #Broken:
 #i = 11
@@ -59,7 +74,10 @@ START HERE
 #    print(i)
 #    i += 1
 
-
+i = 11
+while i > 10:
+    print(i)
+    i -= 1
 
 '''
 For the next section, the directions are the same but we will be working with
@@ -83,18 +101,32 @@ START HERE
 #    print i
 #
 
+Dylan = ["D","y","l","a","n"]
+for i in Dylan:
+    print(i)
+    
 #2)
 #for j in "Dylan":
 #    print i
 
+Dylan = ["D","y","l","a","n"]
+for j in Dylan:
+    print(j)
 
 #3)
 #for i in range(1, 5)
 #    print i 
 #ANSWER:
 
+Dylan = ["D","y","l","a","n"]
+for j in Dylan:
+    print(j)
+    
 #4)
 ##3)
 #for i in range(1, 5:
 #    print i 
 #ANSWER:
+
+for i in range(1, 5):
+    print(i)
